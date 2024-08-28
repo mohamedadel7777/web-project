@@ -27,6 +27,10 @@
         .navbar .links a {
             margin-right: 15px;
         }
+         .navbar a:hover
+        {
+            color: #FF2E2E !important;
+        }
         .navbar .login-button {
             padding: 10px 20px;
             background-color: #181818;
@@ -109,3 +113,68 @@
 .dash-img{
  position: relative;
 }
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto; 
+    }
+
+    .navbar .logo img {
+        margin-right: 0;
+        margin-bottom: 10px; 
+    }
+
+    .navbar .links {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+
+    .navbar .links a {
+        padding: 10px 0;
+        margin-right: 0;
+    }
+
+    .navbar .login-button {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 10px; 
+    }
+
+    .main {
+        padding: 10px;
+    }
+
+    .buttons {
+        flex-direction: column; 
+    }
+
+    #F-Button, #L-Button {
+        width: 100%; 
+        max-width: none; 
+        margin-bottom: 10px; 
+    }
+
+    .imgs {
+        gap: 10px; 
+    }
+
+    .CB-imgs {
+        flex-direction: column; 
+        gap: 10px; 
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar .login-button {
+        width: 100%;
+        margin-top: 10px; 
+    }
+
+    .main {
+        padding: 5px; 
+    }
+}
+
